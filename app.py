@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template
 from database import load_jobs_fromdb
 
 app = Flask(__name__)

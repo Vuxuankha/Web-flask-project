@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine, text
+import os
+db_connect = os.environ['DB_CONNECT']
 
-db_connect = "mysql+pymysql://iierkby7ym1jeib5rqqb:pscale_pw_PrGPJcxAGPoUzdxDBQ3gkZ2iH4uEDDMUgGig9qjJPxX@aws.connect.psdb.cloud/websiteflask?charset=utf8mb4"
 engine = create_engine(db_connect,
                        connect_args={"ssl": {
                          "ssl_ca": "/etc/ssl/cert.pem"
